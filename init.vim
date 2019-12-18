@@ -1,9 +1,5 @@
-function FixupBase16(info)
-    !sed -i '/Base16hi/\! s/a:\(attr\|guisp\)/l:\1/g' ~/.config/nvim/plugged/base16-vim/colors/*.vim
-endfunction
-
 " Specify a directory for plugins
-call plug#begin('~/.config/nvim/plugged')
+cindianapolisall plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -24,7 +20,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --bin'}
 Plug 'junegunn/fzf.vim'
 
-Plug 'chriskempson/base16-vim', {'do': function('FixupBase16')}
+Plug 'dracula/vim', {'as': 'dracula'}
+
 
 " Initialize plugin system
 call plug#end()
@@ -38,6 +35,9 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " run prettier on save
 "let g:prettier#autoformat = 0
 "autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+map <leader>r :RustFmt<CR>
+autocmd FileType rust nnoremap<buffer> <leader>p :RustFmt<CR>
 
 
 " ctrlp
@@ -73,7 +73,9 @@ if has('clipboard')
     set clipboard=unnamed
   endif
 endif
-colorscheme base16-default-dark
+
+set background=dark
+colorscheme dracula
 
 imap jj <esc>
 ino jj <esc>
@@ -88,7 +90,7 @@ map <C-p> :Files<CR>
 set statusline+=%#warningmsg#
 set statusline+=%*
 let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
+let g:airline_theme='dracula'
 " always show signcolumns
 set signcolumn=yes
 
