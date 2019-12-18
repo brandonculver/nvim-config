@@ -1,5 +1,5 @@
 " Specify a directory for plugins
-cindianapolisall plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
