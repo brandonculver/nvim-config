@@ -39,6 +39,8 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 map <leader>r :RustFmt<CR>
 autocmd FileType rust nnoremap<buffer> <leader>p :RustFmt<CR>
 
+autocmd FileType dart nnoremap<buffer> <leader>p :Format<CR>
+
 
 " ctrlp
 "let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
