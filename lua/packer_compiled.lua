@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/focus.nvim",
     url = "https://github.com/beauwilliams/focus.nvim"
   },
-  ["formatter.nvim"] = {
-    loaded = true,
-    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/formatter.nvim",
-    url = "https://github.com/mhartington/formatter.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -128,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["nord-vim"] = {
+    loaded = true,
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nord-vim",
+    url = "https://github.com/arcticicestudio/nord-vim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -223,11 +223,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/vim-sandwich",
     url = "https://github.com/machakann/vim-sandwich"
-  },
-  ["wind-colors"] = {
-    loaded = true,
-    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/wind-colors",
-    url = "https://github.com/windwp/wind-colors"
   },
   ["windline.nvim"] = {
     loaded = true,

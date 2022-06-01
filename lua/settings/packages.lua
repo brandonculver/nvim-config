@@ -70,7 +70,6 @@ local misk = {
   {"rrethy/vim-hexokinase", run = "make hexokinase"}, -- requires golang installed
   --  "rmagatti/alternate-toggler", --toggling alternate "boolean" values.
   "andymass/vim-matchup",
-  {'mhartington/formatter.nvim'}
   -- "rrethy/vim-illuminate", -- highlight matching words when cursor on it
   -- "windwp/nvim-spectre" -- search panel
   -- "glepnir/indent-guides.nvim"
@@ -103,7 +102,8 @@ local snippets = {
 
 local themes = {
   --  "sainnhe/gruvbox-material",
-  "windwp/wind-colors"
+  -- "windwp/wind-colors"
+  "arcticicestudio/nord-vim"
 }
 
 local ui = {

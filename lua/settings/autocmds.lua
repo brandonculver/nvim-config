@@ -11,7 +11,7 @@ cmd "au BufNewFile,BufRead .eslintignore,.prettierignore,.aliases setf conf"
 cmd "au BufNewFile,BufRead .eslintrc,.prettierrc,tsconfig.json setf json"
 
 -- cmd "au BufWritePre * Format"
-cmd "au BufWritePre * lua vim.lsp.buf.formatting_sync()"
+cmd "au BufWritePre * lua vim.lsp.buf.format()"
 cmd "au BufWritePost * normal! zv"
 
 cmd "au FileType gitcommit setl spell"
