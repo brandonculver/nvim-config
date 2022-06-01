@@ -4,6 +4,7 @@ require "plugins.telescope"
 require "plugins.sign"
 require "plugins.commented"
 require "plugins.coq"
+require "plugins.onedark"
 --  require "plugins.nord"
 
 --  vim.cmd [[colorscheme nord]]
