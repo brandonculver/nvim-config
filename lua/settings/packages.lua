@@ -103,7 +103,8 @@ local snippets = {
 local themes = {
   --  "sainnhe/gruvbox-material",
   -- "windwp/wind-colors"
-  "arcticicestudio/nord-vim"
+  --  "arcticicestudio/nord-vim"
+  "joshdick/onedark.vim"
 }
 
 local ui = {
