@@ -11,4 +11,5 @@ vim.cmd [[colorscheme onedark]]
 
 require "nvim-web-devicons".setup()
 require "nvim-ts-autotag".setup()
+require "onedark".load()
 

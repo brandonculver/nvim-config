@@ -104,7 +104,7 @@ local themes = {
   --  "sainnhe/gruvbox-material",
   -- "windwp/wind-colors"
   --  "arcticicestudio/nord-vim"
-  "joshdick/onedark.vim"
+  "navarasu/onedark.nvim"
 }
 
 local ui = {
