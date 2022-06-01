@@ -67,7 +67,7 @@ local misk = {
   -- "metakirby5/codi.vim", --Repl
   --  "voldikss/vim-floaterm",
   "windwp/nvim-ts-autotag", -- Auto change html tags
-  {"rrethy/vim-hexokinase", run = "make hexokinase"}, -- requires golang installed
+  --  {"rrethy/vim-hexokinase", run = "make hexokinase"}, -- requires golang installed
   --  "rmagatti/alternate-toggler", --toggling alternate "boolean" values.
   "andymass/vim-matchup",
   -- "rrethy/vim-illuminate", -- highlight matching words when cursor on it
@@ -108,7 +108,6 @@ local themes = {
 
 local ui = {
   -- "noib3/cokeline.nvim",
-  "filipdutescu/renamer.nvim",
   "beauwilliams/focus.nvim",
   -- "mhinz/vim-startify", -- start screen
   "kyazdani42/nvim-web-devicons",
