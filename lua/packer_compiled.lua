@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/brandon.culver/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/brandon.culver/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/brandon.culver/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/brandon.culver/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/brandon.culver/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/strangescript/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/strangescript/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/strangescript/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/strangescript/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/strangescript/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -71,157 +71,152 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   chadtree = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/chadtree",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/chadtree",
     url = "https://github.com/ms-jpq/chadtree"
   },
   ["commented.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/commented.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/commented.nvim",
     url = "https://github.com/winston0410/commented.nvim"
   },
   ["conflict-marker.vim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/conflict-marker.vim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/conflict-marker.vim",
     url = "https://github.com/rhysd/conflict-marker.vim"
   },
   ["coq.artifacts"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
   ["coq.thirdparty"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
     url = "https://github.com/ms-jpq/coq.thirdparty"
   },
   coq_nvim = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
   ["focus.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/focus.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/focus.nvim",
     url = "https://github.com/beauwilliams/focus.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   fzf = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/fzf",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/fzf",
     url = "https://github.com/junegunn/fzf"
   },
   ["fzf.vim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["nord-vim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nord-vim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-autotag"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
     url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
-  },
-  ["renamer.nvim"] = {
-    loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/renamer.nvim",
-    url = "https://github.com/filipdutescu/renamer.nvim"
   },
   ["splitjoin.vim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/splitjoin.vim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/splitjoin.vim",
     url = "https://github.com/AndrewRadev/splitjoin.vim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
     url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
     url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   undotree = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/undotree",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
   ["vim-fugitive"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-matchup"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/vim-matchup",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/vim-matchup",
     url = "https://github.com/andymass/vim-matchup"
   },
   ["vim-rhubarb"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
     url = "https://github.com/tpope/vim-rhubarb"
   },
   ["vim-sandwich"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/vim-sandwich",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/vim-sandwich",
     url = "https://github.com/machakann/vim-sandwich"
   },
   ["windline.nvim"] = {
     loaded = true,
-    path = "/Users/brandon.culver/.local/share/nvim/site/pack/packer/start/windline.nvim",
+    path = "/home/strangescript/.local/share/nvim/site/pack/packer/start/windline.nvim",
     url = "https://github.com/windwp/windline.nvim"
   }
 }
