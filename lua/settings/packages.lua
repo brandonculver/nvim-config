@@ -24,7 +24,7 @@ local lsp = {
   -- "williamboman/nvim-lsp-installer",
   --  "jose-elias-alvarez/nvim-lsp-ts-utils",
   "JoosepAlviste/nvim-ts-context-commentstring",
-  -- "tsuyoshicho/vim-efm-langserver-settings", -- auto config efm lsp
+  "tsuyoshicho/vim-efm-langserver-settings", -- auto config efm lsp
   {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"},
   {"nvim-telescope/telescope-fzf-native.nvim", run = "make"},
   "nvim-telescope/telescope-media-files.nvim",

@@ -14,3 +14,14 @@ require "nvim-web-devicons".setup()
 require "nvim-ts-autotag".setup()
 require "onedark".load()
 
+require "lspconfig".efm.setup {
+    init_options = {documentFormatting = true},
+    settings = {
+        rootMarkers = {".git/"},
+        languages = {
+            lua = {
+                {formatCommand = "lua-format -i", formatStdin = true}
+            }
+        }
+    }
+}
