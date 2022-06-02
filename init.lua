@@ -1,4 +1,4 @@
 require "settings"
--- require "lsp"
+require "lsp"
 require "plugins"
 --  require "impatient"
