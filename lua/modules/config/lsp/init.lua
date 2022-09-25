@@ -11,10 +11,10 @@ return function()
   local servers_config = {
     -- https://github.com/pedro757/emmet
     -- npm i -g ls_emmet (In order to override the default emmet-ls)
-    emmet_ls = {
-      cmd = { 'ls_emmet', '--stdio' },
-      filetypes = { 'html', 'css', 'scss', 'sass', 'javascript', 'javascriptreact', 'typescriptreact' },
-    },
+    -- emmet_ls = {
+    --   cmd = { 'ls_emmet', '--stdio' },
+    --   filetypes = { 'html', 'css', 'scss', 'sass', 'javascript', 'javascriptreact', 'typescriptreact' },
+    -- },
     jsonls = {
       settings = {
         json = {

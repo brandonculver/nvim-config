@@ -53,8 +53,8 @@ function M.on_attach(client, bufnr)
   map('<space>ca', 'vim.lsp.buf.code_action()')
   map('<space>gh', 'vim.lsp.buf.signature_help()')
   map('<space>rn', 'vim.lsp.buf.rename()')
-  map('[d', 'vim.diagnostic.goto_prev()')
-  map(']d', 'vim.diagnostic.goto_next()')
+  -- map('[d', 'vim.diagnostic.goto_prev()')
+  -- map(']d', 'vim.diagnostic.goto_next()')
   map('<space>df', 'vim.diagnostic.open_float()')
 
   local lsp_signature = safe_require 'lsp_signature'

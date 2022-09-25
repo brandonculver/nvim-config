@@ -37,17 +37,6 @@ local plugins = {
     'kyazdani42/nvim-web-devicons',
     config = conf 'nvim-web-devicons',
   },
-  { -- Zenmode
-    'folke/zen-mode.nvim',
-    config = function()
-      require('zen-mode').setup {
-        window = {
-          width = 100, -- width of the Zen window
-          height = 1, -- height of the Zen window
-        },
-      }
-    end,
-  },
   { -- Copilot
     'github/copilot.vim',
     config = function()
