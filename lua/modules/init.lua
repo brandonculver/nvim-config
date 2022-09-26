@@ -4,13 +4,7 @@ end
 
 local plugins = {
   { -- Colorschemes
-    'folke/tokyonight.nvim',
     'olimorris/onedarkpro.nvim',
-    'ellisonleao/gruvbox.nvim',
-    'luisiacc/gruvbox-baby',
-    'EdenEast/nightfox.nvim',
-    'bluz71/vim-nightfly-guicolors',
-    config = conf 'colors',
   },
   { -- Treesiter
     'nvim-treesitter/nvim-treesitter',
@@ -35,7 +29,31 @@ local plugins = {
   },
   { -- Icons
     'kyazdani42/nvim-web-devicons',
-    config = conf 'nvim-web-devicons',
+    config = function()
+      local nvim_web_devicons = safe_require 'nvim-web-devicons'
+      if not nvim_web_devicons then
+        return
+      end
+
+      nvim_web_devicons.setup {
+        override = {
+          css = { icon = '', color = '#61afef', name = 'css' },
+          html = { icon = '', color = '#DE8C92', name = 'html' },
+          jpeg = { icon = ' ', color = '#BD77DC', name = 'jpeg' },
+          jpg = { icon = ' ', color = '#BD77DC', name = 'jpg' },
+          js = { icon = '', color = '#EBCB8B', name = 'js' },
+          mp3 = { icon = '', color = '#C8CCD4', name = 'mp3' },
+          mp4 = { icon = '', color = '#C8CCD4', name = 'mp4' },
+          out = { icon = '', color = '#C8CCD4', name = 'out' },
+          png = { icon = ' ', color = '#BD77DC', name = 'png' },
+          toml = { icon = '', color = '#61afef', name = 'toml' },
+          ts = { icon = 'ﯤ', color = '#519ABA', name = 'ts' },
+          xz = { icon = '', color = '#EBCB8B', name = 'xz' },
+          zip = { icon = '', color = '#EBCB8B', name = 'zip' },
+          zsh = { icon = '', color = '#428850', name = 'Zsh' },
+        },
+      }
+    end,
   },
   { -- Copilot
     'github/copilot.vim',
@@ -88,7 +106,26 @@ local plugins = {
     },
     { -- Like magit
       'TimUntersberger/neogit',
-      config = conf 'neogit',
+      config = function()
+        local neogit = safe_require 'neogit'
+        if not neogit then
+          return
+        end
+
+        neogit.setup {
+          disable_signs = false,
+          disable_context_highlighting = false,
+          disable_commit_confirmation = false,
+          -- customize displayed signs
+          signs = {
+            -- { CLOSED, OPENED }
+            section = { '>', 'v' },
+            item = { '>', 'v' },
+            hunk = { '', '' },
+          },
+          integrations = { diffview = true },
+        }
+      end,
       requires = { 'nvim-lua/plenary.nvim', 'sindrets/diffview.nvim' },
     },
   },
@@ -110,7 +147,41 @@ local plugins = {
   },
   { -- Statusline
     'nvim-lualine/lualine.nvim',
-    config = conf 'lualine',
+    config = function()
+      local lualine = safe_require 'lualine'
+      if not lualine then
+        return
+      end
+
+      lualine.setup {
+        options = {
+          icons_enabled = true,
+          theme = vim.g.colors_name or 'auto',
+          component_separators = { left = '', right = '' },
+          section_separators = { left = '', right = '' },
+          disabled_filetypes = { 'dashboard', 'NvimTree', 'packer' },
+          always_divide_middle = true,
+        },
+        sections = {
+          lualine_a = { 'mode' },
+          lualine_b = { 'branch', 'diff', { 'diagnostics', sources = { 'nvim_diagnostic' } } },
+          lualine_c = { 'filename' },
+          lualine_x = { 'filetype' },
+          lualine_y = { 'progress' },
+          lualine_z = { 'location' },
+        },
+        inactive_sections = {
+          lualine_a = {},
+          lualine_b = {},
+          lualine_c = { 'filename' },
+          lualine_x = { 'location' },
+          lualine_y = {},
+          lualine_z = {},
+        },
+        tabline = {},
+        extensions = {},
+      }
+    end,
   },
   { -- Colorizer
     'norcalli/nvim-colorizer.lua',
