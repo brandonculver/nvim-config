@@ -16,4 +16,6 @@ return function()
     autotag = { enable = true },
     context_commentstring = { enable = true },
   }
+  local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+  ts_update()
 end

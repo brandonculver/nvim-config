@@ -136,10 +136,6 @@ local plugins = {
     'windwp/nvim-autopairs',
     config = conf 'nvim-autopairs',
   },
-  { -- Indent guides
-    'lukas-reineke/indent-blankline.nvim',
-    config = conf 'indent-blankline',
-  },
   { -- Bufferline
     'akinsho/nvim-bufferline.lua',
     config = conf 'nvim-bufferline',

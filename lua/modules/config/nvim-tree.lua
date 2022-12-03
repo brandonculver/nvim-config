@@ -17,8 +17,6 @@ return function()
       custom = { '.git' }, -- Files to hide
     },
     view = {
-      width = 35,
-      height = 30,
       hide_root_folder = false,
       side = 'right',
       signcolumn = 'no',

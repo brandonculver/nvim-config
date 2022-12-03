@@ -1,9 +1,8 @@
-
-  -- require 'core.utils'
-  -- require 'core.options'
-  -- require 'core.keymaps'
-  -- require 'core.autocmd'
-  -- vim.cmd 'hi Normal guibg=NONE ctermbg=NONE'
+-- require 'core.utils'
+-- require 'core.options'
+-- require 'core.keymaps'
+-- require 'core.autocmd'
+-- vim.cmd 'hi Normal guibg=NONE ctermbg=NONE'
 
 function P(cmd)
   print(vim.inspect(cmd))
@@ -82,21 +81,21 @@ o.tabstop = 4
 
 -- Shortmess
 o.shortmess = o.shortmess
-  + {
-    A = true, -- don't give the "ATTENTION" message when an existing swap file is found.
-    I = true, -- don't give the intro message when starting Vim |:intro|.
-    W = true, -- don't give "written" or "[w]" when writing a file
-    c = true, -- don't give |ins-completion-menu| messages
-    m = true, -- use "[+]" instead of "[Modified]"
-  }
+    + {
+      A = true, -- don't give the "ATTENTION" message when an existing swap file is found.
+      I = true, -- don't give the intro message when starting Vim |:intro|.
+      W = true, -- don't give "written" or "[w]" when writing a file
+      c = true, -- don't give |ins-completion-menu| messages
+      m = true, -- use "[+]" instead of "[Modified]"
+    }
 
 -- Format options
 o.formatoptions = o.formatoptions
-  + {
-    c = false,
-    o = false, -- O and o, don't continue comments
-    r = true, -- Pressing Enter will continue comments
-  }
+    + {
+      c = false,
+      o = false, -- O and o, don't continue comments
+      r = true, -- Pressing Enter will continue comments
+    }
 
 -- Remove builtin plugins
 vim.g.loaded_netrw = 1
@@ -124,7 +123,8 @@ map('n', '<C-s>', '<cmd>w<CR>')
 map('n', '<F9>', '<cmd>lua require"core.compiler".compile_and_run()<CR>')
 -- stylua: ignore
 -- Copy relative filepath eg: from nvim folder this would look like: "lua/core/keymaps.lua" copied to clipboard
-map( 'n', '<space>fp', '<cmd>let @*=fnamemodify(expand("%"), ":~:.") | echo( \'"\' . (fnamemodify(expand("%"), ":~:.")) . \'" copied to clipboard\')<CR>')
+map('n', '<space>fp',
+  '<cmd>let @*=fnamemodify(expand("%"), ":~:.") | echo( \'"\' . (fnamemodify(expand("%"), ":~:.")) . \'" copied to clipboard\')<CR>')
 -- Buffers
 map('i', 'jj', '<esc>')
 map('n', ',d', '<cmd>bp<CR>')
@@ -193,7 +193,7 @@ map('n', '<space>fo', '<cmd>lua require"telescope.builtin".oldfiles()<CR>')
 map('n', '<space>fw', '<cmd>lua require"telescope.builtin".live_grep()<CR>')
 map('n', '<space>fd', '<cmd>lua require"telescope.builtin".git_files({cwd = "$HOME/.dotfiles" })<CR>')
 -- Tree
-map('n', '<space>n', '<cmd>NvimTreeToggle<CR>')
+map('n', 't', '<cmd>NvimTreeToggle<CR>')
 -- Vim surround ( noremap need to be false to work)
 map('n', 'ds', '<Plug>Dsurround', { noremap = false })
 map('n', 'cs', '<Plug>Csurround', { noremap = false })
