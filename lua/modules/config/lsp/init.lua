@@ -6,7 +6,6 @@ return function()
 
   require('modules.config.lsp.handlers').setup()
   require('modules.config.lsp.handlers').enable_format_on_save()
-  require('modules.config.lsp.null-ls').setup()
 
   local servers_config = {
     -- https://github.com/pedro757/emmet
