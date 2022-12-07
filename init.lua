@@ -153,7 +153,7 @@ map('n', ',e', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 map('n', ',w', '<cmd>Telescope diagnostics<CR>')
 
 -- Format
-map('n', ',p', '<cmd>lua vim.lsp.buf.formatting()<CR>')
+map('n', ',p', '<cmd>lua vim.lsp.buf.format({async = true})<CR>')
 
 
 -- Visual
