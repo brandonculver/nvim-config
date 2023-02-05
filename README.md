@@ -2,7 +2,7 @@
 
 Uses Lua configs for nvim
 
-must `:so` with packer.lau open, packer is not loaded unless you want to recompile.
+must `:so` with packer.lua open, packer is not loaded unless you want to recompile.
 
 If anyone stumbles upon this menagerie, take note, its a huge work in progress.
 
