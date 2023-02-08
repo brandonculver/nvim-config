@@ -51,5 +51,6 @@ return require('packer').startup(function(use)
     }
     use('sbdchd/neoformat')
     use('phaazon/hop.nvim')
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
 end)
