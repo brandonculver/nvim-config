@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
     use("github/copilot.vim")
     use('folke/lsp-colors.nvim')
     use('nvim-tree/nvim-web-devicons')
+    use('RRethy/vim-illuminate')
     use {
         "folke/trouble.nvim",
         requires = "nvim-tree/nvim-web-devicons"
@@ -52,5 +53,14 @@ return require('packer').startup(function(use)
     use('sbdchd/neoformat')
     use('phaazon/hop.nvim')
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use {
+        "SmiteshP/nvim-navic",
+        requires = "neovim/nvim-lspconfig"
+    }
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+    }
+    use("lukas-reineke/indent-blankline.nvim")
 
 end)
