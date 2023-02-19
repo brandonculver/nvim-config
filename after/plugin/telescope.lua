@@ -3,6 +3,7 @@ local builtin = require('telescope.builtin')
 telescope.setup({
     defaults = {
         path_display = { "smart" },
+        theme = "dropdown",
     },
     pickers= {
         git_files = {

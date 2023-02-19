@@ -13,7 +13,8 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use('navarasu/onedark.nvim')
+    -- use('navarasu/onedark.nvim')
+    use('rrethy/nvim-base16');
     use('tpope/vim-commentary')
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use('nvim-treesitter/playground')
