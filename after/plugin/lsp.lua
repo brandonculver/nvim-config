@@ -7,7 +7,7 @@ lsp.ensure_installed({
     'angularls',
     'jsonls',
     'eslint',
-    'sumneko_lua',
+    'lua_ls',
     'rust_analyzer',
 })
 
