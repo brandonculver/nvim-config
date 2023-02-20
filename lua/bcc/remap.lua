@@ -9,8 +9,8 @@ vim.g.neoformat_enabled_json = { 'prettier' }
 local ext_to_lang = {
     js = "javascript",
     ts = "typescript",
-    tsx = "typescript",
-    jsx = "javascript",
+    tsx = "typescriptreact",
+    jsx = "javascriptreact",
     json = "json",
 }
 
